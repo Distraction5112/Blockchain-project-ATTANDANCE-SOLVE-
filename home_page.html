@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attandance Breaker</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&family=Mochiy+Pop+One&family=Open+Sans:wght@300&family=Roboto+Mono:ital@1&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&family=Mochiy+Pop+One&family=Open+Sans:wght@300&family=Playfair+Display&family=Roboto+Mono:ital@1&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ----------HEAD PART---------------- -->
+    <header>
+        <div id="logo">
+           <div><img src="iit ism logo.jpg" alt="" height="100px"></div> 
+           <div id="name"><h1 style="text-align: center;">Attandance Solver</h1> <p>Now There will be no Defaulter</p>
+           </div>
+           <div id="sign_in"><button>Sign In</button></div>
+    </header>
+
+
+    <!-- ------------SOME BASIC INFO-------------- -->
+    <main>
+    <div class="sem-info">
+        <h1>User Details:</h1>
+        <div class="form">
+        <div>
+            <label for="name"> Name : </label><input class="inputs" type="text" id="fname" placeholder="Full Name" required>
+        </div>
+        <div>
+            <label for="adm"> Admission Number : </label><input class="inputs" type="text" id="adm" placeholder="Admission Number" required>
+        </div>
+        <div>
+          <label for="sem">Semester :</label>  <input class="inputs" type="text" id="sem" placeholder="Semester" required >
+        </div>
+        <div >
+          <label for="subjects">No. of cources : </label>  <input class="inputs" type="number" id="cources" placeholder="Cources">
+        </div>
+        </div>
+        <div class="submit">
+            <button id="entry" onclick=" myfunction()"> Submit</button>
+        </div>
+    </div>
+
+    <div class="cources">
+        <div>
+        <h1>Enter Name of Cources Manually</h1>
+        <p>(please fill cources one by one with clicking on submit button <br> if cource name countain space plz use ("_"))</p>
+        </div>
+        <div ">
+            <h1 >----------</h1>
+        </div>
+        <div>
+             <label for="" id="crs_no" style="font-size: 20px; margin-right:20px">1</label><input type="text" placeholder="Cource name" id="cource">
+            <input type="submit" name="Enter" id="crs_sbmt" value="Enter">
+        </div>
+    </div>
+
+    
+    
+
+    <h1 id="heading">Attandance Sheet</h1>
+     <!-- --------DATE and TIME-------  -->
+    <h2 id="date_time"><span id="date">
+    </span><span id="time"></span></h2>
+
+
+
+    <!-- creating main attandance data -->
+
+    <div class="" id="attandance">
+            <div class="sample sample1">
+            <h1>SAMPLE BOX</h1>
+            <div><p>Present : <span>0</span></p>   <p>Absent : 0 </p></div>
+            <div><p class="present_pres">% Present : <span>0</span></p> <P class="total_classes">Total classes :<span>0</span> </P></div>
+            <div><label>Mark today Attandance -----</label>  <input type="checkbox" checked id="today_attand"></div>
+        </div>
+    </div>
+
+    <div class="submit_today_attend"><button id="attnd_submit"> Submit Today Attandance </button></div>
+    </main>
+
+
+    
+  <!--  ----------footer-------------- -->
+    <footer>
+        <div>
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Give Feedback</a></li>
+                <li><a href="#">Report</a></li>
+            </ul>
+            <div><i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-twitter"></i>  <i class="fa-brands fa-github"></i></div>
+            <P>&copy;copyright reserved</P>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
