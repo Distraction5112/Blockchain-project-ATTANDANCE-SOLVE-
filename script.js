@@ -194,7 +194,6 @@ shownotification = () =>{
 }
 
 showDefaultNotify = () =>{
-    alert("it runs");
     let DEFAULTERnoti = new Notification("ATTANDANCE SOLVER " , {
         body:"YOU ARE IN DEFAULTER REGION PLZ ATTEND CLASSES REGULARLY",
         icon: "favicon.png"
